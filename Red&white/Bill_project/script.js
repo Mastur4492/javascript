@@ -14,4 +14,4 @@ function calculate() {
 
         document.getElementById('answer').innerHTML = `Total Bill : ${total}`;
     }
-}
+}  

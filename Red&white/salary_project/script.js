@@ -16,7 +16,7 @@ document.getElementById('btn-salary').addEventListener('click',function(){
            result.innerHTML = `<i> Check field! </i>`; 
     }else{
        let basicsalary = grossSalary - (da + hra + conveyance + other);
-       
+           
        result.innerHTML = `Basic Salary : ${basicsalary}`;
     }
 
