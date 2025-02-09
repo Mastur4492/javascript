@@ -95,25 +95,3 @@ button:active {
     max-height: 300px;
     overflow-y: auto;
 }
-
-/* #result::-webkit-scrollbar {
-    width: 8px;
-}
-
-#result::-webkit-scrollbar-track {
-    background: #ffffff;
-}
-
-#result::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 4px;
-}
-
-#result::-webkit-scrollbar-thumb:hover {
-    background: #333333;
-}
-
-#result:empty {
-    padding: 0;
-    border: none;
-} */
