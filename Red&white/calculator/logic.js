@@ -1,20 +1,17 @@
 
-function calculate(exp){
+function calculate(check){
 
-    let num1 = parseInt(document.getElementById('input-num1').value);
-    let num2 = parseInt(document.getElementById('input-num2').value);
+    let num1 = parseInt(document.getElementById('num1').value);
+    let num2 = parseInt(document.getElementById('num2').value);
 
     let result = document.getElementById('answer');;
     result.style.fontSize = "40px";
-
-    // result.classList.add('box'); // padhna
-    // result.classList.remove('box'); // padhna
-
+    
     if(isNaN(num1) || isNaN(num2)){
         result.innerHTML = `<i> Please enter number! </i>`
     }else{
 
-        switch(exp){
+        switch(check){
             case 'add':
                 result.innerHTML = `Sum : ${num1+num2}`;
                 break;

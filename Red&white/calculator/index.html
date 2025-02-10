@@ -4,22 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Calculator</title>
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1 class="calculate-heading">Basic Calculator</h1>
-        <input id="input-num1" type="number" placeholder="Enter First Number" required>
-        <input id="input-num2" type="number" placeholder="Enter Second Number" required>
-        <button onclick="calculate('add')">Addition</button>
-        <button onclick="calculate('sub')">Subtract</button>
-        <button onclick="calculate('mul')">Multiply</button>
-        <button onclick="calculate('divide')">Divide</button>
+        <h1 class="calculate">Calculator</h1>
+        <input id="num1" type="number" placeholder="Enter First Number" required>
+
+        <input id="num2" type="number" placeholder="Enter Second Number" required>
+
+        <button onclick="calculate('add')"><img class = "set" src="./plus.png" alt="+"></button>
+
+        <button onclick="calculate('sub')"><img class = "set" src="./remove.png" alt="-"></button>
+
+        <button onclick="calculate('mul')"><img class = "set" src="./multiplication.png" alt="*"></button>
+
+        <button onclick="calculate('divide')"><img class = "set" src="./divide.png" alt="/class = "set" "></button>
+
         <div id="answer"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="logic.js"></script>
 </body>
 
 </html>
