@@ -22,4 +22,4 @@ function fact() {
     }
     
     Answer.innerHTML = `The factorial of ${num} is ${result}`;
-}
+} 
