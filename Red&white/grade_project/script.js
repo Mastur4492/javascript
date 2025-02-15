@@ -1,4 +1,4 @@
-function calculateGrade() {
+function CheckGrade() {
     const score = parseInt(document.getElementById('score').value);
     let grade;
 
