@@ -19,3 +19,7 @@
 // console.log(now.toLocaleString()); // Example: "3/21/2025, 2:23:45 PM"
 // console.log(now.toLocaleDateString()); // Example: "3/21/2025"
 // console.log(now.toLocaleTimeString()); // Example: "2:23:45 PM"
+
+setTimeout(() => {
+    document.getElementById('new').style.display = 'block';
+}, 3000);
