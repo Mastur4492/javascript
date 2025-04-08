@@ -19,8 +19,8 @@ function clock() {
     let diff = (end - now) / 1000; // Convert milliseconds to seconds
 
     // If the target time has passed (i.e., the difference is negative), stop the countdown
-    if (diff < 0) {
-        alert("Your Count Down Complet"); // Stop execution if the time has passed
+    if (diff < 0) { 
+     alert("Your Count Down Completed")                    // Stop execution if the time has passed
         return;
     }
 
