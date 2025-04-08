@@ -49,14 +49,30 @@
 
 // response.then((data) => console.log(data)).catch((error) => console.log(error));
 
-let URL = "https://dummyjson.com/products";
-async function response() {
-  try {
-      let data = await fetch(URL);
-      console.log(data);
-    jsondata = await data.json();
-    console.log(jsondata);
-  } catch (error) {
-    console.log("Field!");
-  }
-}
+// let URL = "https://dummyjson.com/products";
+// async function response() {
+//   try {
+//       let data = await fetch(URL);
+//       console.log(data);
+//     jsondata = await data.json();
+//     console.log(jsondata);
+//   } catch (error) {
+//     console.log("Field!");
+//   }
+// }
+
+let myPromise = new Promise ((resolve, reject ) => { 
+    let success = true;
+    // let success = false;
+    if (success){
+        resolve("promise pura ho gya!");
+    }
+    else{
+        reject("failed");
+    }
+});
+
+myPromise
+.then((data)=> console.log("successfull : ", data))
+.catch((error)=> console.log("error :",error))
+.finally(()=> console.log("cleanup : promise handled!"))
